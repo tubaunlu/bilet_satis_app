@@ -50,14 +50,10 @@ class _SplashPageState  extends State<SplashPage> with SingleTickerProviderState
    },
    child: Image.asset('assets/images/logo.png'),
    
-
-   ),
-  
+   ),  
   ));
 
-  
- }
- 
+ } 
 }
 
 
