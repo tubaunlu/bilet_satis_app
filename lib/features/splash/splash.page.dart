@@ -27,7 +27,6 @@ class _SplashPageState  extends State<SplashPage> with SingleTickerProviderState
     //animasyonu baslat
     _controller.forward();
 
- 
  Future.delayed(Duration(seconds:3),() {
  //Navigator.pushReplacementNamed(context, '/login');
 });
