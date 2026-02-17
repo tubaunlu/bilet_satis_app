@@ -13,22 +13,13 @@ class _SplashPageState  extends State<SplashPage> with SingleTickerProviderState
  @override 
  void initState(){
     super.initState();
-     //animasyon controller
      _controller = AnimationController(duration:const Duration(seconds: 3), vsync:this,);
-     
-     //opaklık animasyonu
      _opacityAnimation = Tween<double>(begin: 0,end: 1).animate(CurvedAnimation(parent:_controller, curve: Curves.easeIn),);
-
-
-     //dönüs icin
    _rotationAnimation = Tween<double>(begin: 0,end: 2 * 3.14159).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut),);
-
-    //animasyonu baslat
     _controller.forward();
 
  Future.delayed(Duration(seconds:3),() {
   if(!mounted) return;
-
  Navigator.pushReplacementNamed(context, '/register');
  } );
  }
