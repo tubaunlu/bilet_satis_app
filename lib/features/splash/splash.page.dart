@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class SplashPage extends StatefulWidget{
   const SplashPage({super.key});
   @override
@@ -28,8 +27,10 @@ class _SplashPageState  extends State<SplashPage> with SingleTickerProviderState
     _controller.forward();
 
  Future.delayed(Duration(seconds:3),() {
- //Navigator.pushReplacementNamed(context, '/login');
-});
+  if(!mounted) return;
+
+ Navigator.pushReplacementNamed(context, '/register');
+ } );
  }
  @override
   void dispose(){

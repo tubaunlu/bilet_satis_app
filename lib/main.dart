@@ -1,6 +1,9 @@
+
+import 'package:bilet_satis_app/auth/register/register_page.dart';
+import 'package:bilet_satis_app/features/splash/splash.page.dart';
 import 'package:flutter/material.dart';
-import 'features/splash/splash.page.dart';
-//import 'auth/login/login_page.dart';
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
    initialRoute: '/',
    routes: {
       '/': (context) => SplashPage(),
-      //'/login': (context) => Loginpage(),
+      '/register': (context) => RegisterPage(),
    },
     );
 
