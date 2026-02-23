@@ -33,21 +33,21 @@ Widget build(BuildContext context) {
       Padding(
         padding: EdgeInsets.symmetric(vertical: 20.0,horizontal: 20.0),
       child: TextField(
-      decoration: InputDecoration(
-      labelText: 'Username',
-      labelStyle: TextStyle(color:Color(0xFFC89295)),
-      filled: true,
-      fillColor: Color(0xFF472426),
+       decoration: InputDecoration(
+       labelText: 'Username',
+       labelStyle: TextStyle(color:Color(0xFFC89295)),
+        filled: true,
+        fillColor: Color(0xFF472426),
       border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide.none,
+       borderRadius: BorderRadius.circular(12),
+       borderSide: BorderSide.none,
       ),
       contentPadding: EdgeInsets.all(18),
       ),
       style: TextStyle(color: Colors.white),
     
       ) 
-      ),
+    ),
     
     Padding(padding: 
     EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
