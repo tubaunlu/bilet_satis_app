@@ -1,4 +1,4 @@
-
+import 'package:bilet_satis_app/auth/login/login_page.dart';
 import 'package:bilet_satis_app/auth/register/register_page.dart';
 import 'package:bilet_satis_app/features/splash/splash.page.dart';
 import 'package:flutter/material.dart';
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
    routes: {
       '/': (context) => SplashPage(),
       '/register': (context) => RegisterPage(),
+      '/login': (context) => LoginPage(),
    },
     );
 

@@ -1,6 +1,5 @@
 import "package:flutter/material.dart";
 
-
 class RegisterPage extends StatefulWidget {
      const RegisterPage({super.key});
 
@@ -8,10 +7,9 @@ class RegisterPage extends StatefulWidget {
     State<RegisterPage> createState() => _RegisterPageState();  
   }
   class _RegisterPageState extends State<RegisterPage>{
-
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
+   @override
+   Widget build(BuildContext context) {
+   return Scaffold(
     backgroundColor: Color(0xFF221112),
     body: Padding(
         padding: const EdgeInsets.only(top: 70),
@@ -28,8 +26,7 @@ Widget build(BuildContext context) {
             color: Colors.white,
           ),
         ),
-        SizedBox(height: 20),
-        
+        SizedBox(height: 20),   
       Padding(
         padding: EdgeInsets.symmetric(vertical: 20.0,horizontal: 20.0),
       child: TextField(
@@ -48,7 +45,6 @@ Widget build(BuildContext context) {
     
       ) 
     ),
-    
     Padding(padding: 
     EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
      child:TextField(
@@ -66,7 +62,6 @@ Widget build(BuildContext context) {
     style: TextStyle(color: Colors.white),
       )
       ),
-    
    Padding(padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
     child: TextField(
       decoration: InputDecoration(
@@ -83,7 +78,6 @@ Widget build(BuildContext context) {
      style: TextStyle(color: Colors.white),
       ),
     ),
- 
     SizedBox(height: 20),
     ElevatedButton(
      onPressed: () {},  
@@ -110,24 +104,26 @@ Widget build(BuildContext context) {
     fontSize: 15,
    ),
  ),
-
   SizedBox(height: 20),
    ElevatedButton(
-  onPressed:() {},  
-  style: ElevatedButton.styleFrom(
-  backgroundColor: Color(0xFF472426),
-  padding: EdgeInsets.symmetric(vertical: 20, horizontal: 140),
-  shape: RoundedRectangleBorder(
+   onPressed:() {
+    Navigator.pushNamed(context, '/login');
+   },  
+   style: ElevatedButton.styleFrom(
+   backgroundColor: Color(0xFF472426),
+   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 140),
+   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(30),
   )
    ),
-  child: const Text(
- 'Log in',
- style: TextStyle(
-  fontWeight: FontWeight.bold,
-  fontSize: 18,
-  color: Colors.white,
+   child: const Text(
+    'Log in',
+    style: TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 18,
+    color: Colors.white,
     ),
+
    ),
   )  
       ]
