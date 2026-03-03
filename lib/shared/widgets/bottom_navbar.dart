@@ -35,7 +35,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
         label: 'Favorites', 
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.hd),
+        icon: Icon(Icons.account_circle),
         label: 'Profile',
       ),
     ],
